@@ -10,7 +10,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 3000;
 
 // MongoDB Atlas Bağlantı Linki
-const MONGO_URI = "mongodb://dronurgogebakan_db_user:5120288@ac-6mny8b6-shard-00-00.xnaohye.mongodb.net:27017,ac-6mny8b6-shard-00-01.xnaohye.mongodb.net:27017,ac-6mny8b6-shard-00-02.xnaohye.mongodb.net:27017/?ssl=true&replicaSet=atlas-9x029z-shard-0&authSource=admin&retryWrites=true&w=majority";
+const MONGO_URI = "mongodb+srv://dronurgogebakan_db_user:5120288@cluster0.xnaohye.mongodb.net/seyrusefa?retryWrites=true&w=majority&appName=Cluster0";
 
 // MongoDB Atlas Bulut Bağlantısı
 mongoose.connect(MONGO_URI)
